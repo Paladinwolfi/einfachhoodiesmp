@@ -1,0 +1,6 @@
+@HoodieStatsApi_HostAddress = http://localhost:5070
+
+GET {{HoodieStatsApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
