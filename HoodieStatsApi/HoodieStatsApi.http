@@ -12,6 +12,10 @@ Accept: application/json
 GET {{HoodieStatsApi_HostAddress}}/api/stats/totalplaytime
 Accept: application/json
 
+### GET Totel Playtime
+GET {{HoodieStatsApi_HostAddress}}/api/stats
+Accept: application/json
+
 ### GET server playercount
 GET {{HoodieStatsApi_HostAddress}}/api/player/Alex
 Accept: application/json

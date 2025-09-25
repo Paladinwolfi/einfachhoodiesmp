@@ -17,11 +17,12 @@ namespace HoodieStatsApi.Controllers
             _dataService = dataService;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<List<Player>>> GetPlayers()
+        [HttpGet("stats")]
+        public async Task<ActionResult<CachedStats>> GetStats()
         {
-            var players = await _dataService.GetPlayersAsync();
-            return Ok(players);
+            var stats = await _dataService.GetStatsAsync();
+            if (stats == null) return NotFound();
+            return Ok(stats);
         }
     }
 }

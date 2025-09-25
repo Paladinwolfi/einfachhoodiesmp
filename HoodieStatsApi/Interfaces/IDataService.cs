@@ -4,7 +4,6 @@ namespace HoodieStatsApi.Interfaces
 {
     public interface IDataService
     {
-        Task<List<Player>> GetPlayersAsync();
-        Task<ServerStats?> GetServerStatsAsync();
+        Task<CachedStats?> GetStatsAsync();
     }
 }
