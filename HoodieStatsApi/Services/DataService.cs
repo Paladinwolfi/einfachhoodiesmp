@@ -44,7 +44,7 @@ public class DataService : IDataService
             {
                 try
                 {
-                    var players = await _db.Players.ToListAsync();
+                    List<Player> players = await _db.Players.ToListAsync();
                     var stats = await _db.ServerStats.FirstOrDefaultAsync();
 
                     _cache.Set(PlayersKey, players, TimeSpan.FromSeconds(35));

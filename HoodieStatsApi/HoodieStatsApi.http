@@ -8,8 +8,8 @@ Accept: application/json
 GET {{HoodieStatsApi_HostAddress}}/api/serverstats
 Accept: application/json
 
-### GET Player Alex
-GET {{HoodieStatsApi_HostAddress}}/api/player/Alex
+### GET Totel Playtime
+GET {{HoodieStatsApi_HostAddress}}/api/stats/totalplaytime
 Accept: application/json
 
 ### GET server playercount
