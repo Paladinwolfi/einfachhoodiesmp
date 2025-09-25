@@ -1,8 +1,22 @@
+using HoodieStatsApi.Data;
+using HoodieStatsApi.Interfaces;
+using HoodieStatsApi.Services;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        new MySqlServerVersion(new Version(8, 0, 36))
+    )
+);
+
+builder.Services.AddControllers();
+builder.Services.AddMemoryCache();
+builder.Services.AddScoped<IDataService, DataService>();
+
 
 var app = builder.Build();
 
@@ -14,28 +28,21 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+app.MapControllers();
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/serverstats", async (IDataService dataService) =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    var stats = await dataService.GetServerStatsAsync();
+    return Results.Ok(stats);
+});
+
+app.MapGet("/player/{playername}", async (string playername, AppDbContext db) =>
+    await db.Players.FirstOrDefaultAsync(p => p.Name == playername)
+);
+
+
+
+ // TODO Doku richtig anpassen damit jeder checkt  = .WithName("playtime");
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

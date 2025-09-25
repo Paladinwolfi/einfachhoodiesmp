@@ -1,6 +1,25 @@
 @HoodieStatsApi_HostAddress = http://localhost:5070
 
-GET {{HoodieStatsApi_HostAddress}}/weatherforecast/
+### GET Players
+GET {{HoodieStatsApi_HostAddress}}/api/Player
 Accept: application/json
 
-###
+### GET ServerStats
+GET {{HoodieStatsApi_HostAddress}}/api/serverstats
+Accept: application/json
+
+### GET Player Alex
+GET {{HoodieStatsApi_HostAddress}}/api/player/Alex
+Accept: application/json
+
+### GET server playercount
+GET {{HoodieStatsApi_HostAddress}}/api/player/Alex
+Accept: application/json
+
+### GET whole Server money volume
+GET {{HoodieStatsApi_HostAddress}}/api/player/Alex
+Accept: application/json
+
+### GET All Server Hoodies
+GET {{HoodieStatsApi_HostAddress}}/api/player/Alex
+Accept: application/json

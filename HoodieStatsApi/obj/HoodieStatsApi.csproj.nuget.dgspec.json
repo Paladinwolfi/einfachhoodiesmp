@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tad\\Desktop\\Repositorys\\EinfachhoodieDe\\HoodieStatsApi\\HoodieStatsApi.csproj": {}
+    "C:\\Users\\tad\\Desktop\\Repositorys\\einfachhoodiesmp\\HoodieStatsApi\\HoodieStatsApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tad\\Desktop\\Repositorys\\EinfachhoodieDe\\HoodieStatsApi\\HoodieStatsApi.csproj": {
+    "C:\\Users\\tad\\Desktop\\Repositorys\\einfachhoodiesmp\\HoodieStatsApi\\HoodieStatsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tad\\Desktop\\Repositorys\\EinfachhoodieDe\\HoodieStatsApi\\HoodieStatsApi.csproj",
+        "projectUniqueName": "C:\\Users\\tad\\Desktop\\Repositorys\\einfachhoodiesmp\\HoodieStatsApi\\HoodieStatsApi.csproj",
         "projectName": "HoodieStatsApi",
-        "projectPath": "C:\\Users\\tad\\Desktop\\Repositorys\\EinfachhoodieDe\\HoodieStatsApi\\HoodieStatsApi.csproj",
+        "projectPath": "C:\\Users\\tad\\Desktop\\Repositorys\\einfachhoodiesmp\\HoodieStatsApi\\HoodieStatsApi.csproj",
         "packagesPath": "C:\\Users\\tad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tad\\Desktop\\Repositorys\\EinfachhoodieDe\\HoodieStatsApi\\obj\\",
+        "outputPath": "C:\\Users\\tad\\Desktop\\Repositorys\\einfachhoodiesmp\\HoodieStatsApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\tad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -53,6 +53,24 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             }
           },
           "imports": [
@@ -74,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
