@@ -23,6 +23,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddControllers();
 builder.Services.AddMemoryCache();
 builder.Services.AddScoped<IDataService, DataService>();
+builder.Services.AddScoped<IStatsService, StatsService>();
 
 
 var app = builder.Build();
