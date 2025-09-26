@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "498Yy7u/A88=",
+  "dgSpecHash": "EfCTt1YUpNI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\tad\\Desktop\\Repositorys\\einfachhoodiesmp\\HoodieStatsApi\\HoodieStatsApi.csproj",
+  "projectFilePath": "C:\\Users\\tad\\Desktop\\Repositorys\\EinfachhoodieDe\\HoodieStatsApi\\HoodieStatsApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tad\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\tad\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

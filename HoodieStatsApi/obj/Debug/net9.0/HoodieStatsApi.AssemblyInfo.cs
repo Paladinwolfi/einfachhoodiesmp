@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HoodieStatsApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c48c1e7e106e9ee9810f70bf6c0466612851e6da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14aa994a576175d287936f174b86a0bb90a76767")]
 [assembly: System.Reflection.AssemblyProductAttribute("HoodieStatsApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HoodieStatsApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

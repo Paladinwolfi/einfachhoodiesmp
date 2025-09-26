@@ -30,17 +30,6 @@ app.UseHttpsRedirection();
 
 app.MapControllers();
 
-app.MapGet("/serverstats", async (IDataService dataService) =>
-{
-    var stats = await dataService.GetServerStatsAsync();
-    return Results.Ok(stats);
-});
-
-app.MapGet("/player/{playername}", async (string playername, AppDbContext db) =>
-    await db.Players.FirstOrDefaultAsync(p => p.Name == playername)
-);
-
-
 
  // TODO Doku richtig anpassen damit jeder checkt  = .WithName("playtime");
 

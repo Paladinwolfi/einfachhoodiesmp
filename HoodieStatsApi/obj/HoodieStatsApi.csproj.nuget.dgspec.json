@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tad\\Desktop\\Repositorys\\einfachhoodiesmp\\HoodieStatsApi\\HoodieStatsApi.csproj": {}
+    "C:\\Users\\tad\\Desktop\\Repositorys\\EinfachhoodieDe\\HoodieStatsApi\\HoodieStatsApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tad\\Desktop\\Repositorys\\einfachhoodiesmp\\HoodieStatsApi\\HoodieStatsApi.csproj": {
+    "C:\\Users\\tad\\Desktop\\Repositorys\\EinfachhoodieDe\\HoodieStatsApi\\HoodieStatsApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tad\\Desktop\\Repositorys\\einfachhoodiesmp\\HoodieStatsApi\\HoodieStatsApi.csproj",
+        "projectUniqueName": "C:\\Users\\tad\\Desktop\\Repositorys\\EinfachhoodieDe\\HoodieStatsApi\\HoodieStatsApi.csproj",
         "projectName": "HoodieStatsApi",
-        "projectPath": "C:\\Users\\tad\\Desktop\\Repositorys\\einfachhoodiesmp\\HoodieStatsApi\\HoodieStatsApi.csproj",
+        "projectPath": "C:\\Users\\tad\\Desktop\\Repositorys\\EinfachhoodieDe\\HoodieStatsApi\\HoodieStatsApi.csproj",
         "packagesPath": "C:\\Users\\tad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tad\\Desktop\\Repositorys\\einfachhoodiesmp\\HoodieStatsApi\\obj\\",
+        "outputPath": "C:\\Users\\tad\\Desktop\\Repositorys\\EinfachhoodieDe\\HoodieStatsApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\tad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
